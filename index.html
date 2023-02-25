@@ -56,70 +56,10 @@
         </section>
         <section class="md:px-36 md:py-20">
             <h1 class="text-4xl font-bold text-center mb-16">Your Favourite Food</h1>
-            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 ">
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f1.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f2.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f3.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f4.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f5.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card md:card-side bg-base-100 border">
-                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f6.jpg" alt="Album" /></figure>
-                    <div class="card-body md:w-3/5">
-                        <h2 class="card-title">Chicken Handi</h2>
-                        <p>There are many variations of passages of available, but the majority have suffered</p>
-                        <div class="card-actions">
-                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
-                        </div>
-                    </div>
-                </div>
+            <div id="card-container" class="grid gap-4 grid-cols-1 md:grid-cols-2 ">
             </div>
             <div class="flex justify-center items-center my-16">
-                <button class="btn btn-warning normal-case text-lg font-bold text-black h-14 md:px-10"> Show All
+                <button id="show-all-btn" class="btn btn-warning normal-case text-lg font-bold text-black h-14 md:px-10"> Show All
                 </button>
             </div>
 
@@ -133,14 +73,13 @@
     <input type="checkbox" id="my-modal" class="modal-toggle" />
     <div class="modal">
         <div class="modal-box">
-            <h3 class="font-bold mb-5 text-lg">Congratulations random Internet user!</h3>
+            <h3 id="meal-title" class="font-bold mb-5 text-lg"></h3>
             <hr>
-            <img class="w-full my-5" src="images/tempura.jpg" alt="">
-            <p class="py-2"><strong>Catagory:</strong>Chicken</p>
-            <p class="py-2"><strong>Area:</strong>Japanese</p>
-            <p class="py-2"><strong>Instructions:</strong> You've been selected for a chance to get one year of subscription to use Wikipedia for free!
-            </p>
-            <a href="" class="py-4 text-red-600"><strong>Youtube</strong></a>
+            <img id="meal-img" class="w-full my-5" src="" alt="">
+            <p class="py-2"><strong>Catagory:</strong> <span id="meal-catagory"></span></p>
+            <p class="py-2"><strong>Area:</strong> <span id="meal-area"></span></p>
+            <p class="py-2"><strong>Instructions:</strong><br><span id="meal-instruction"></span></p>
+            <a id="meal-tutorial" target="_blank" class="btn bg-red-600 border-0 hover:bg-red-700 py-4 text-white"><strong>Tutorial</strong></a>
             <div class="modal-action">
                 <label for="my-modal" class="btn">Close</label>
             </div>
