@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>ThaiLicious</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-image {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 py-7 shadow-lg md:px-36">
+            <div class="flex-1">
+                <a class=""><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="flex-none">
+                <button class="btn btn-warning normal-case text-lg font-bold text-black h-14 md:px-10">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="" class="mx-auto text-center bg-image w-full px-10 py-7 md:py-32 md:px-80">
+                <div>
+                    <h1 class="text-white font-bold text-4xl md:text-6xl mb-6">Taste Our Delicious <br> Best Foods</h1>
+                </div>
+                <div>
+                    <p class="text-white mb-6">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humou.</p>
+                </div>
+                <div class="flex mx-auto w-[95%]">
+                    <input id="searchItem" type="text" placeholder="🔍︎ Type here" class="input h-14 rounded-r-none w-4/5" />
+                    <button onclick="searchItem()"
+                        class="btn btn-warning normal-case text-lg font-bold text-black h-14 md:px-10 w-1/5 -ml-2">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="md:px-36 md:py-20">
+            <h1 class="text-4xl font-bold text-center mb-16">Your Favourite Food</h1>
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 ">
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f1.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f2.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f3.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f4.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f5.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md:card-side bg-base-100 border">
+                    <figure class="md:w-2/5"><img class="w-full md:h-72" src="/images/f6.jpg" alt="Album" /></figure>
+                    <div class="card-body md:w-3/5">
+                        <h2 class="card-title">Chicken Handi</h2>
+                        <p>There are many variations of passages of available, but the majority have suffered</p>
+                        <div class="card-actions">
+                            <button href="" class="text-yellow-400 font-bold underline underline-offset-4 "><label for="my-modal" class="cursor-pointer">View Details</label></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center my-16">
+                <button class="btn btn-warning normal-case text-lg font-bold text-black h-14 md:px-10"> Show All
+                </button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Put this part before end of the body tag -->
+    <input type="checkbox" id="my-modal" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold mb-5 text-lg">Congratulations random Internet user!</h3>
+            <hr>
+            <img class="w-full my-5" src="images/tempura.jpg" alt="">
+            <p class="py-2"><strong>Catagory:</strong>Chicken</p>
+            <p class="py-2"><strong>Area:</strong>Japanese</p>
+            <p class="py-2"><strong>Instructions:</strong> You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+            </p>
+            <a href="" class="py-4 text-red-600"><strong>Youtube</strong></a>
+            <div class="modal-action">
+                <label for="my-modal" class="btn">Close</label>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
